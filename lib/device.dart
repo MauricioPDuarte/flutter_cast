@@ -18,7 +18,9 @@ class CastDevice {
   });
 
   @override
-  bool operator ==(Object other) => identical(this, other) || (other is CastDevice && runtimeType == other.runtimeType && other.serviceName == serviceName);
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is CastDevice && runtimeType == other.runtimeType && other.serviceName == serviceName);
 
   @override
   int get hashCode => serviceName.hashCode;
